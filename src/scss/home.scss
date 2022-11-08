@@ -1,0 +1,248 @@
+//====================================================================================================
+//========================================================================================================================================================
+
+.cover {
+
+    // .cover__container
+
+    &__container {
+        text-align: center;
+    }
+
+    // .cover__title
+
+    &__title {
+        text-transform: uppercase;
+        @include adaptiveValue("font-size", 40, 25);
+        @include adaptiveValue("margin-top", 60, 30);
+        @include adaptiveValue("margin-bottom", 40, 25);
+        @media (min-width:$mobileSmall){
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+
+    // .cover__paragraph
+
+    &__paragraph {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+.slider {
+
+    // .slider__container
+
+    &__container {
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        @media (min-width:$pc){
+            flex-wrap: nowrap;
+            gap: 5px;
+        }
+    }
+}
+.slide-element {
+    max-width: 420px;
+    text-align: center;
+    @include adaptiveValue("margin-top", 55, 40);
+}
+.slide {
+
+    // .slide__image
+
+    &__image {
+        width: 100%;
+    }
+
+    // .slide__title
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $mainColor;
+        line-height: math.div( 20, 15);
+        @include adaptiveValue("margin-top", 35, 25);
+        @include adaptiveValue("font-size", 20, 18);
+    }
+
+    // .slide__paragraph
+
+    &__paragraph {
+        margin-top: rem(15);
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+
+.title {
+    text-transform: uppercase;
+}
+.bold {
+    font-weight: 700;
+}
+.paragraph {
+    font-size: rem(16);
+}
+
+//====================================================================================================
+
+.formula {
+    background: $yellow;
+    @include adaptiveValue("margin-top", 180, 70);
+
+    // .formula__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @include adaptiveValue("margin-top", 160, 140);
+        @include adaptiveValue("margin-bottom", 160, 140);
+    }
+
+    // .formula__left
+
+    &__left {
+        width: 100%;
+        background-image: url("../img/mainpage/background.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-top: 70%;
+    }
+
+    // .formula__left-content
+
+    &__left-content {
+    }
+
+    // .formula__background-img
+
+    &__background-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__background {
+        position: relative;
+    }
+
+    // .formula__content-box
+
+    &__content-box {
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+    }
+
+    &__img {
+        margin: 50px 10px;
+        @media (max-width:$mobileSmall){
+            display: none;
+        }
+    }
+
+    // .formula__attachment-top
+
+    &__top {
+        @media (max-width:$mobile){
+            max-width: fit-content;
+        }
+    }
+
+    // .formula__attachment-bottom
+
+    &__bottom {
+        @media (max-width:$mobile){
+        }
+    }
+
+    // .formula__right
+
+    &__right {
+        width: 100%;
+        display: flex;
+        margin-left: 10px;
+    }
+
+    // .formula__title
+
+    &__title {
+        @include adaptiveValue("margin-top", 100, 60);
+        @include adaptiveValue("font-size", 55, 45);
+        line-height: rem(45);
+        text-align: left;
+        color: #fff;
+        font-weight: 700;
+        line-height: math.div(45 , 40);
+    }
+
+    // .formula__paragraph
+
+    &__paragraph {
+        line-height: rem(28);
+        @include adaptiveValue("margin-top", 40, 10);
+    }
+
+    // .formula__img-logo
+
+    &__img-logo {
+        width: auto;
+        @include adaptiveValue("margin-top", 45, 30);
+        @include adaptiveValue("margin-bottom", 45, 30);
+    }
+
+
+    @media (min-width:$mobile){
+        &__container {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+    
+        // .formula__left
+    
+        &__left {
+            width: 100%;
+            padding: 0;
+        }
+    
+        // .formula__top
+    
+        &__top {
+            position: absolute;
+            left: 20px;
+            top: -100px;
+            transform: translateY(-10%) translateX(-160%) rotate(180deg);
+        }
+    
+        // .formula__bottom
+    
+        &__bottom {
+            position: absolute;
+            left: 0;
+            transform: translateY(10%) translateX(-50%);
+        }
+    
+        // .formula__right
+    
+        &__right {
+            width: 100%;
+            position: relative;
+        }
+
+        &__content-box {
+            margin-left: 20%;
+            margin-right: 10%;
+        }
+    }
+}
+
+
+//====================================================================================================

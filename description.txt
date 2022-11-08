@@ -1,0 +1,13 @@
+Description
+
+In this task I used:
+- Font conversion ttf -->  woff and woff2 for faster loading (faster than a font link). 
+- Optimization and compression of images into webp format.
+- Grouping media queries, adding vendor prefixes (with using gulp)
+- Mobile first merhod
+
+I also made this task fully adaptable for all types of devices. At the same time I used media queries and in some cases mixins.
+
+Importing images, preparing fonts and files - 1 - 1.5h.
+HTML - 30-40 min.
+CSS(SCSS) - ~ 2h.
