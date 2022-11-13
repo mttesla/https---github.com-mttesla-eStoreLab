@@ -3,9 +3,6 @@ This is a test task that I performed for the company eStoreLabs. Only HTML/CSS i
 
 
 
-## How to download and view test task
-
-
 ### The first step is to download all the files of this repository. After unpack all the files and open them in the editor with the console
 * If you have not used GULP, WEBPACK, and the NPM package manager up to this point, you should download and install [Node.js](https://nodejs.org/en/).
 Download the version recommended for most.
